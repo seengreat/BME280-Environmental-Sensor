@@ -2,7 +2,7 @@ BME280-Environmental-Sensor from seengreat:www.seengreat.com
  =======================================
 # Ⅰ  Instruction
 ## 1.1、Product Overview
-This product is a high-precision Environmental sensor, the BME280 sensor to achieve temperature, humidity and barometric pressure monitoring, the chip temperature sensing in -40~+85 °C, humidity sensing in 0~100%, barometric pressure sensing in 300~1100hPa. PH2.0 6PIN wire is used to connect the module to the development board for environmental detection, Arduino and Raspberry Pi C and python and STM32 versions of demo codes are available, demo codes enable real-time monitoring of temperature, humidity and barometric pressure.<br>
+This product is a high-precision Environmental sensor, the BME280 sensor to achieve temperature, humidity and barometric pressure monitoring, the chip temperature sensing in -40~+85 °C, humidity sensing in 0 to 100%, barometric pressure sensing in 300 to 1100hPa. PH2.0 6PIN wire is used to connect the module to the development board for environmental detection, Arduino and Raspberry Pi C and python and STM32 versions of demo codes are available, demo codes enable real-time monitoring of temperature, humidity and barometric pressure.<br>
 ## 1.2、Product parameters
 |Size	|30mm(Length)*18mm(Width)|
 |-----------|-------------------------------|
