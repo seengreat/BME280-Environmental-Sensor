@@ -2,7 +2,7 @@ BME280-Environmental-Sensor from seengreat:www.seengreat.com
  =======================================
 # Ⅰ  Instruction
 ## 1.1、Product Overview
-This product is a high-precision Environmental sensor, the BME280 sensor to achieve temperature, humidity and barometric pressure monitoring, the chip temperature sensing in -40~+85 °C, humidity sensing in 0~100%, barometric pressure sensing in 300~1100hPa.PH2.0 6PIN wire is used to connect the module to the development board for environmental detection, Arduino and Raspberry Pi C and python and STM32 versions of demo codes are available, demo codes enable real-time monitoring of temperature, humidity and barometric pressure.<br>
+This product is a high-precision Environmental sensor, the BME280 sensor to achieve temperature, humidity and barometric pressure monitoring, the chip temperature sensing in -40~+85 °C, humidity sensing in 0~100%, barometric pressure sensing in 300~1100hPa. PH2.0 6PIN wire is used to connect the module to the development board for environmental detection, Arduino and Raspberry Pi C and python and STM32 versions of demo codes are available, demo codes enable real-time monitoring of temperature, humidity and barometric pressure.<br>
 ## 1.2、Product parameters
 |Size	|30mm(Length)*18mm(Width)|
 |-----------|-------------------------------|
@@ -21,8 +21,8 @@ This product is a high-precision Environmental sensor, the BME280 sensor to achi
 |-----------|----------|----|
 |VCC	|Power supply positive (3.3V/5V)	|Power supply positive (3.3V/5V)|
 |GND	|Power supply ground	|Power supply ground|
-|SCK	|clock line	clock input|
-|MOSI	|data line	data input|
+|SCK	|clock line	|clock input|
+|MOSI	|data line	|data input|
 |MISO/ADDR	|NC	|data output|
 |CS	|NC	|SPI chip selection pin (active at low level)|
 ## 2.2、Raspberry Pi Demo Codes Usage	
@@ -36,6 +36,7 @@ The demo codes in the Raspberry Pi motherboard uses the wiringpi number pin defi
 |MOSI	|SDA	|MOSI	|10	|12|
 |MISO/ADDR	|NC	|MISO	|9	|13|
 |CS	|NC	|GPIO.6	|25	|6|
+
 Table2-2 Pin definition of the module wiring to the Raspberry Pi<br>
 The program defaults to I2C wiring mode and changes #define USE_IIC 1 in the main.c program from 1 to 0 when SPI is required.<br>
 ### 2.2.2、Wiringpi library installation
@@ -62,7 +63,7 @@ Enter the WiringPi Python folder you just downloaded, enter the following comman
 sudo python setup.py install <br>
 #For Python version 3. X<br>
 sudo python3 setup.py install<br>
-If the following error occurs:<br>
+If  error occurs:<br>
 
 At this time, enter the command sudo apt install swig to install swig. After that, compile and install sudo python3 setup.py install. If a message similar to the following appears, the installation is successful.<br>
 ### 2.2.3、Open SPI interface
@@ -98,6 +99,7 @@ The wiring between the BME280 and the Arduino development board is shown in the 
 |MOSI	|SDA	|D11|
 |MISO/ADDR	|NC	|D12|
 |CS	|NC	|D10|
+
 Table2-3 Pin definition of the module wiring to the Arduino<br>
 The program defaults to I2C wiring mode, change #define USE_IIC 1 from 1 to 0 when SPI is required, and then recompile and run the program.<br>
 ### 2.3.2、Installation of libraries
